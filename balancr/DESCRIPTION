@@ -1,7 +1,7 @@
 Package: balancr
 Title: Plots nutrient geometry as close to easily as you can get.
 Version: 0.0.0.9000
-Authors@R: person("Emma", "Cancelliere")
+Authors@R: person("Emma", "Cancelliere",email="emma.cancelliere@gmail.com",role=c("aut","cre"))
 Description: A (very) preliminary stab at plotting functions for nutritional geometry!
 Depends: R (>= 3.4.4)
 License: What license is it under?
