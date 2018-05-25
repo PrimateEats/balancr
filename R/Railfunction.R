@@ -20,7 +20,7 @@ Railfunction=function(data,id,x,y){
   x=eval(arguments$x,data)
   y=eval(arguments$y,data)
   df1=data.frame(id,x,y)
-  nutratio=paste0(round(mean(df1[,2]),digits=2),":",round(mean(df1[,3]),digits=2))
+  nutratio=paste0("1",":",(round(mean(df1[,3])/mean(df1[,2]),digits=2)))
   originpoint=c(0)
   df2 <- cbind(df1[,2], df1[,3])
   df2 <- as.data.frame(df2)
