@@ -54,7 +54,7 @@ Groupwiserail=function(data,id,x,y){
   } 
   for (i in 1:nid){
     group <- subset(df1,id2==i)
-    nutratio=paste(round(mean(group$x)),":",round(mean(group$y)))
+    nutratio=paste("1",":",round(mean(group$y)/mean(group$x)))
     par(xpd=TRUE)
     text(group$x[1],group$y[1],paste(unique(group$id),"-",nutratio,xlabel,"to",ylabel,"energy"),cex=0.7,pos=4)
   }
