@@ -4,18 +4,18 @@
 \alias{RMTfunction}
 \title{Right-angle Mixture Triangles}
 \usage{
-RMTfunction(data, id, x, y, z)
+RMTfunction(data, x, y, z, id)
 }
 \arguments{
 \item{data}{the dataframe holding your data}
-
-\item{id}{your grouping variable or sample ID}
 
 \item{x}{X axis nutrient (will be labelled on an energy (kCal) basis)}
 
 \item{y}{Y axis nutrient (will be labelled on an energy (kCal) basis)}
 
 \item{z}{Z/implicit axis nutrient (will be labelled on an energy (kCal) basis)}
+
+\item{id}{an optional argument. Grouping variable or other indicator of multiple groups within your dataset.}
 }
 \value{
 dataframe of proportional nutrient data, along with right-angle mixture triangle for data
@@ -25,5 +25,5 @@ This function generates a right-angle mixture triangle demonstrating the nutrien
 All you need to do is input 3 nutrients and a grouping variable, and voila!
 }
 \examples{
-RMTfunction(gorillafood,age,carb,fat,protein)
+RMTfunction(gorillafood,carb,fat,protein,age)
 }
