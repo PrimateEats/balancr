@@ -4,24 +4,26 @@
 \alias{Railfunction}
 \title{Nutrient rails}
 \usage{
-Railfunction(data, id, x, y)
+Railfunction(data, x, y, id, group = FALSE)
 }
 \arguments{
 \item{data}{the dataframe holding your data}
 
-\item{id}{your grouping variable or sample ID}
-
 \item{x}{X axis nutrient (will be labelled on an energy (kCal) basis)}
 
 \item{y}{Y axis nutrient (will be labelled on an energy (kCal) basis)}
+
+\item{id}{an optional argument. Grouping variable or other indicator of multiple groups within your dataset.}
+
+\item{group}{group=TRUE/FALSE. Default is FALSE Where group=FALSE, intake rail will be generated for entire dataset. Where group=TRUE, intake rail will be generated for each group.}
 }
 \value{
-A complete plot demonstrating the intake rail for ALL ENTRIES (see Groupwiserail for rails by id variable), as well as the ratio of Nutrient X to Y
+A complete plot demonstrating the intake rail(s), as well as the ratio of Nutrient X to Y
 }
 \description{
 This function generates a rail plot demonstrating the nutrient balance of foods. 
 All you need to do is input 2 nutrients and a grouping variable, and voila!
 }
 \examples{
-Railfunction(baboondailyintake,individual,carb,fat)
+Railfunction(baboondailyintake,carb,fat,individualname,group=TRUE)
 }
