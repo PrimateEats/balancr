@@ -23,7 +23,7 @@ RMTfunction=function(data,x,y,z,id){
   z=eval(arguments$z,data)
   df1=data.frame(x,y,z)
   df2=cbind(df1[1], prop.table(as.matrix(df1), margin = 1))
-  par(pin=c(4.93,5))
+  par(pin=c(3.29,3.33))
   par(xpd=FALSE)
   plot(df2[,3]~df2[,2],cex=0.9, xlab=paste("Proportion",xlabel,"energy (kCal)"),
        ylab=paste("Proportion",ylabel,"energy (kCal)"),xlim=c(0,1),ylim=c(0,1),pch=19)
@@ -50,7 +50,7 @@ RMTfunction=function(data,x,y,z,id){
   palette=c("chartreuse3","orange2","cornflowerblue","grey47","mediumpurple3","black","deeppink","darkblue","forestgreen",
             "chocolate","grey65","yellow3","lavenderblush4","darkgoldenrod2","slateblue4","brown1","steelblue4","mediumvioletred","tomato4","royalblue1",
             "seagreen","tan2","lightcoral","red")
-  par(pin=c(4.93,5))
+  par(pin=c(3.29,3.33))
   par(xpd=FALSE)
   plot(df2[,3]~df2[,2],cex=1.4, xlab=paste("Proportion",xlabel,"energy (kCal)"),
        ylab=paste("Proportion",ylabel,"energy (kCal)"),col=palette[as.factor(df1[,1])],pch=c(15,16,17,18,19,20,3,4,8,13,21,22,23,24,25)[as.factor(df1[,1])],xlim=c(0,1),ylim=c(0,1))
