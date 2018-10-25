@@ -21,9 +21,9 @@ Atwater=function(carb,fat,protein,id,data){
   fat=eval(arguments$fat,data)
   protein=eval(arguments$protein,data)
   id=eval(arguments$id,data)
-  carb=x*4
-  fat=y*9
-  protein=z*4
+  carb=carb*4
+  fat=fat*9
+  protein=protein*4
   df=data.frame(id,carb,fat,protein)
   }
   else{
@@ -32,9 +32,9 @@ Atwater=function(carb,fat,protein,id,data){
   fat=eval(arguments$fat,data)
   protein=eval(arguments$protein,data)
   id=eval(arguments$id,data)
-  carb=x*4
-  fat=y*9
-  protein=z*4
+  carb=carb*4
+  fat=fat*9
+  protein=protein*4
   df=data.frame(id,carb,fat,protein)
   }
 }
