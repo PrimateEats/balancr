@@ -20,11 +20,10 @@ Atwater=function(carb,fat,protein,id,data){
   carb=eval(arguments$carb,data)
   fat=eval(arguments$fat,data)
   protein=eval(arguments$protein,data)
-  id=eval(arguments$id,data)
   carb=carb*4
   fat=fat*9
   protein=protein*4
-  df=data.frame(id,carb,fat,protein)
+  df=data.frame(carb,fat,protein)
   }
   else{
     arguments=as.list(match.call())
